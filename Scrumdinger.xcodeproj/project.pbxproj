@@ -14,6 +14,7 @@
 		CE641D522CFE32D600BA2CC1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE641D512CFE32D600BA2CC1 /* Theme.swift */; };
 		CE641D542CFE352900BA2CC1 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE641D532CFE352900BA2CC1 /* DailyScrum.swift */; };
 		CE641D562CFE36F800BA2CC1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE641D552CFE36F800BA2CC1 /* CardView.swift */; };
+		CE641D582CFE41FE00BA2CC1 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE641D572CFE41FE00BA2CC1 /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CE641D512CFE32D600BA2CC1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		CE641D532CFE352900BA2CC1 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		CE641D552CFE36F800BA2CC1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CE641D572CFE41FE00BA2CC1 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				CE641D492CFE32A000BA2CC1 /* MeetingView.swift */,
 				CE641D552CFE36F800BA2CC1 /* CardView.swift */,
 				CE641D4A2CFE32A000BA2CC1 /* ScrumdingerApp.swift */,
+				CE641D572CFE41FE00BA2CC1 /* TrailingIconLabelStyle.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				CE641D4E2CFE32A000BA2CC1 /* MeetingView.swift in Sources */,
 				CE641D4F2CFE32A000BA2CC1 /* ScrumdingerApp.swift in Sources */,
 				CE641D562CFE36F800BA2CC1 /* CardView.swift in Sources */,
+				CE641D582CFE41FE00BA2CC1 /* TrailingIconLabelStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
