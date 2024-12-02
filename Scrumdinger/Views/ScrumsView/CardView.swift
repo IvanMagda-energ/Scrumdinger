@@ -24,7 +24,6 @@ struct CardView: View {
                 Spacer()
                 
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                    .padding(.trailing, 20)
                     .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
                     .labelStyle(.trailingIcon)
             }
