@@ -17,8 +17,12 @@ struct DetailEditView: View {
                 TextField("Title", text: $scrum.title)
                 
                 HStack {
-                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 1...30, step: 1)
+                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 1...30, step: 1) {
+                        Text("Length")
+                    }
+                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
                     Text("\(scrum.lengthInMinutes) minutes")
+                        .accessibilityHidden(true)
                 }
             }
             Section("Attendees") {
@@ -31,6 +35,7 @@ struct DetailEditView: View {
                 
                 HStack {
                     TextField("New Attendee", text: $newAttendeeName)
+                    
                     Button {
                         withAnimation {
                             let newAttendee = DailyScrum.Attendee(name: newAttendeeName)
@@ -39,6 +44,7 @@ struct DetailEditView: View {
                         }
                     } label: {
                         Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel("Add attendee")
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
