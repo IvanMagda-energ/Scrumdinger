@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4C1B892D04E840007AE0C6 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C1B882D04E840007AE0C6 /* DetailEditView.swift */; };
 		CE641D4C2CFE32A000BA2CC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE641D462CFE32A000BA2CC1 /* Preview Assets.xcassets */; };
 		CE641D4D2CFE32A000BA2CC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE641D482CFE32A000BA2CC1 /* Assets.xcassets */; };
 		CE641D4E2CFE32A000BA2CC1 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE641D492CFE32A000BA2CC1 /* MeetingView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		CE0D52A02CDB3CA6005034F8 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4C1B882D04E840007AE0C6 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		CE641D462CFE32A000BA2CC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE641D482CFE32A000BA2CC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE641D492CFE32A000BA2CC1 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				CE641D5F2CFE59E400BA2CC1 /* DetailView.swift */,
+				CE4C1B882D04E840007AE0C6 /* DetailEditView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				CE641D542CFE352900BA2CC1 /* DailyScrum.swift in Sources */,
 				CE641D602CFE59E400BA2CC1 /* DetailView.swift in Sources */,
+				CE4C1B892D04E840007AE0C6 /* DetailEditView.swift in Sources */,
 				CE641D522CFE32D600BA2CC1 /* Theme.swift in Sources */,
 				CE641D4E2CFE32A000BA2CC1 /* MeetingView.swift in Sources */,
 				CE641D5A2CFE4A8400BA2CC1 /* ScrumsView.swift in Sources */,
