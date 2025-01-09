@@ -39,4 +39,13 @@ final class ScrumStore {
             self.scrums = scrums
         }
     }
+    
+    func save() async throws {
+        let task = Task {
+            let data = try JSONEncoder().encode(scrums)
+            let outFile = try Self.fileURL()
+            try data.write(to: outFile)
+        }
+        _ = try await task.value
+    }
 }
