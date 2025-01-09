@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ScrumsView: View {
+    @Environment(\.scenePhase) private var scenePhase
     @Binding var scrums: [DailyScrum]
     
+    @State private var isPresentingNewScrumView = false
+    
+    let saveAction: () -> Void
+        
     var body: some View {
         NavigationStack {
             List($scrums) { $scrum in
@@ -22,16 +27,30 @@ struct ScrumsView: View {
             }
             .navigationTitle("Daily Scrums")
             .toolbar {
-                Button(action: {}) {
+                Button {
+                    isPresentingNewScrumView = true
+                } label: {
                     Image(systemName: "plus")
                 }
                 .accessibilityLabel("New Scrum")
+            }
+            .sheet(isPresented: $isPresentingNewScrumView) {
+                NewScrumSheet(
+                    isPresentingNewScrumView: $isPresentingNewScrumView,
+                    scrums: $scrums
+                )
+            }
+            .onChange(of: scenePhase) {
+                if scenePhase == .inactive {
+                    saveAction()
+                }
             }
         }
     }
 }
 
+
 #Preview {
     let scrums = DailyScrum.sampleData
-    ScrumsView(scrums: .constant(DailyScrum.sampleData))
+    ScrumsView(scrums: .constant(DailyScrum.sampleData)) {}
 }
