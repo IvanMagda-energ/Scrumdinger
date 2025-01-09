@@ -40,7 +40,7 @@ final class ScrumStore {
         }
     }
     
-    func save() async throws {
+    func save(scrums: [DailyScrum]) async throws {
         let task = Task {
             let data = try JSONEncoder().encode(scrums)
             let outFile = try Self.fileURL()
